@@ -1,0 +1,460 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+color: #062630;
+background: #fff;
+line-height: 1.5;
+}
+
+img {
+display: block;
+max-width: 100%;
+}
+
+a {
+text-decoration: none;
+}
+
+h1, h2, h3 {
+line-height: 1.15;
+}
+
+.header {
+padding: 20px;
+background: #fdf8f4;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+color: #062630;
+font-size: 20px;
+font-weight: bold;
+}
+
+.logo-icon {
+display: grid;
+place-items: center;
+width: 38px;
+height: 38px;
+color: #e9a17c;
+background: #062630;
+border-radius: 6px;
+}
+
+.hero-section {
+padding: 35px 20px;
+background-color: #fdf8f4;
+background-image:
+linear-gradient(#0626300b 1px, transparent 1px),
+linear-gradient(90deg, #0626300b 1px, transparent 1px);
+background-size: 40px 40px;
+}
+
+.hero-section h1 {
+margin: 0 0 25px;
+font-size: 44px;
+font-family: monospace;
+font-weight: 800;
+letter-spacing: -2px;
+}
+
+.hero-section h1 span {
+color: #a66a4d;
+}
+
+.hero-text > p {
+margin-bottom: 25px;
+color: #42575b;
+font-size: 18px;
+}
+
+.button1 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+width: 100%;
+padding: 18px 16px;
+border: 2px solid #062630;
+border-radius: 9px;
+color: #062630;
+background: #fff4ed;
+font-family: monospace;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+
+.button1:hover,
+.button1:focus {
+background: #e6f1ef;
+}
+
+.member-rating {
+display: flex;
+align-items: center;
+gap: 15px;
+margin: 25px 0;
+}
+
+.member-photos {
+display: flex;
+flex-shrink: 0;
+}
+
+.member-photos img {
+width: 48px;
+height: 48px;
+margin-right: -10px;
+border: 2px solid white;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.rating-text {
+min-width: 0;
+}
+
+.stars {
+color: #e99b72;
+font-size: 23px;
+letter-spacing: 3px;
+}
+
+.rating-text p {
+margin: 0;
+font-family: monospace;
+font-size: 14px;
+}
+
+.hero-image0 {
+width: 100%;
+margin-top: 35px;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.reading-section {
+padding: 45px 20px;
+}
+
+.reading-image,
+.community-image {
+width: 100%;
+border-radius: 12px;
+object-fit: cover;
+}
+
+.reading-content h2,
+.community-content h2,
+.journey-section h2,
+.membership-section > h2 {
+margin: 30px 0;
+font-family: monospace;
+font-size: 34px;
+letter-spacing: -1px;
+}
+
+.benefit-list,
+.membership-card ul {
+padding: 0;
+list-style: none;
+}
+
+.benefit-list li,
+.membership-card li {
+position: relative;
+margin: 22px 0;
+padding-left: 42px;
+color: #42575b;
+font-size: 18px;
+}
+
+.benefit-list li::before,
+.membership-card li::before {
+content: "✓";
+position: absolute;
+left: 0;
+top: 2px;
+display: grid;
+place-items: center;
+width: 25px;
+height: 25px;
+border: 2px solid #062630;
+border-radius: 4px;
+font-size: 17px;
+}
+
+.community-section {
+padding: 35px 20px;
+}
+
+.community-content p {
+color: #42575b;
+font-size: 18px;
+}
+
+.community-image {
+margin-top: 30px;
+}
+
+.journey-section {
+margin: 20px;
+padding: 30px;
+border-radius: 12px;
+background-color: #fdf8f4;
+background-image:
+linear-gradient(#0626300b 1px, transparent 1px),
+linear-gradient(90deg, #0626300b 1px, transparent 1px);
+background-size: 40px 40px;
+}
+
+.journey-list {
+padding: 0;
+list-style: none;
+counter-reset: steps;
+}
+
+.journey-list li {
+counter-increment: steps;
+margin: 35px 0;
+font-family: monospace;
+font-size: 20px;
+font-weight: bold;
+}
+
+.journey-list li::before {
+content: counter(steps);
+display: grid;
+place-items: center;
+width: 40px;
+height: 40px;
+margin-bottom: 18px;
+border: 2px solid #062630;
+border-radius: 5px;
+}
+
+.membership-section {
+padding: 30px 20px;
+}
+
+.membership-section > h2 {
+margin-bottom: 30px;
+}
+
+.membership-card {
+margin-bottom: 20px;
+padding: 28px;
+border: 1px solid #e0e3e2;
+border-radius: 12px;
+}
+
+.membership-card h3 {
+margin-top: 0;
+font-family: monospace;
+font-size: 28px;
+}
+
+.price {
+padding-bottom: 20px;
+border-bottom: 1px solid #e0e3e2;
+}
+
+.price strong {
+font-size: 42px;
+}
+
+.price span {
+color: #42575b;
+font-size: 20px;
+}
+
+.membership-card li {
+margin: 20px 0;
+}
+
+.membership-button {
+display: block;
+margin-top: 30px;
+padding: 18px 10px;
+border: 2px solid #062630;
+border-radius: 8px;
+background: #fff4ed;
+color: #062630;
+font-family: monospace;
+font-weight: bold;
+text-align: center;
+}
+
+.membership-button:hover,
+.membership-button:focus {
+background: #e6f1ef;
+}
+
+.pro-card {
+background: linear-gradient(135deg, #fff4ed, #e6f1ef);
+}
+
+.testimonial-section {
+padding: 45px 20px;
+text-align: center;
+}
+
+.testimonial-section h2 {
+font-family: monospace;
+font-size: 28px;
+text-align: left;
+}
+
+.testimonial-section p {
+color: #42575b;
+text-align: left;
+}
+
+.final-section {
+padding: 40px 20px 0;
+color: white;
+background-color: #062630;
+background-image:
+linear-gradient(#ffffff08 1px, transparent 1px),
+linear-gradient(90deg, #ffffff08 1px, transparent 1px);
+background-size: 40px 40px;
+border-radius: 15px 15px 0 0;
+}
+
+.final-section h2 {
+margin-top: 0;
+font-family: monospace;
+font-size: 38px;
+text-align: center;
+}
+
+.final-section .button {
+color: white;
+background: transparent;
+border-color: white;
+}
+
+.final-section .button:hover {
+color: #062630;
+background: #fff4ed;
+}
+
+.final-section .member-rating {
+padding-bottom: 25px;
+border-bottom: 1px solid #42575b;
+}
+
+.final-section .member-photos img {
+border-color: #062630;
+}
+
+.final-section .footer {
+padding: 25px 0;
+text-align: center;
+}
+
+.footer p {
+font-family: monospace;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.social-links a {
+color: white;
+font-size: 24px;
+font-weight: bold;
+}
+
+
+
+/* TABLET */
+@media (min-width: 768px) {
+  .header {padding: 25px 6%;}
+  .hero {padding: 55px 6%;}
+  .hero h1 {font-size: 60px;}
+  .hero-image {max-height: 500px;}
+  
+  .reading-section,
+  .community-section {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 60px 6%;
+  }
+
+  .reading-image,
+  .reading-content,
+  .community-image,
+  .community-content {flex: 1; min-width: 0;}
+
+  .journey-section,
+  .membership-section {margin: 40px 6%;}
+
+  .membership-cards {display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;}
+  .membership-card {margin: 0;}
+  .testimonial-section {padding: 60px 10%;}
+  .final-section {padding: 60px 8% 0;}
+  .final-section h2 {font-size: 48px;}
+
+  .reading-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .hero {display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding: 70px 8%;}
+  .hero h1 {font-size: 64px;}
+  .hero-image {height: 550px; margin: 0;}
+
+  .reading-section,
+  .community-section {padding: 80px 10%; gap: 80px;}
+
+  .reading-content h2,
+  .community-content h2,
+  .journey-section h2,
+  .membership-section > h2 {font-size: 44px;}
+
+  .journey-section {margin: 50px 10%; padding: 45px;}
+  .journey-list {display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px;}
+  .membership-section {max-width: 1200px; margin: 70px auto;}
+  .membership-cards {grid-template-columns: repeat(3, 1fr);}
+  .testimonial-section {max-width: 850px; margin: auto;}
+  .final-section {padding: 70px 15% 0;}
+  .final-section h2 {font-size: 56px; max-width: 700px; margin: 0 auto 30px;}
+
+  .reading-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+.student-info {
+text-align: center;
+padding: 25px 15px;
+margin-top: 30px;
+background: white;
+color: #253347;
+font-size: 14px;
+line-height: 2;
+}
